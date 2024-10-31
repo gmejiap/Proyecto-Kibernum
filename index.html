@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia de Entrenamiento Digital</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>  
 <body>  
@@ -11,13 +12,19 @@
     <div class="logo_menu">
         <h1>KIBERNUM</h1>
     </div>
-    <nav>
-            <a href="./pages/pagina2.html">Nosotros</a>
-            <a href="./pages/pagina3.html">Partners</a>
-            <a href="./pages/pagina4.html">Programas</a>
-            <a href="./pages/pagina5.html">Pilares</a>
-    </nav>  
-</header> 
+    <nav class="nav-hamb">
+        <input type="checkbox" id="toggle">
+        <label for="toggle"><i class="material-icons">menu</i></label>
+        <div class="menu-hamb">
+            <ul>
+                <li><a href="./pages/pagina2.html">Nosotros</a></li>
+                <li><a href="./pages/pagina3.html">Partners</a></li>
+                <li><a href="./pages/pagina4.html">Programas</a></li>
+                <li><a href="./pages/pagina5.html">Pilares</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>  
 <main>
 <section class="hero">
     <h1>Nuestro Enfoque</h1>
