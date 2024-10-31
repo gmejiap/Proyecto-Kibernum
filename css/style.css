@@ -157,25 +157,32 @@ nav div ul li a {
 .modelos {
     width: 100%;
     height: auto;
-    background-color: #bdafaf;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(../assets/fondo-progr.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 .modelos h1{
     font-size: 2.1875rem;
     padding: 20px;
+    background-color: #cccccc83;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: 120px;
 }
 .modelos h2 {
     font-size: 3.125rem;
     padding:20px;
+    background-color: #cccccc83;
+    border-radius: 20px;
 }
 .videos {
     width: 100%;
     height: auto;
-    background-color: #bdafaf;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -268,8 +275,8 @@ nav div ul li a {
     grid-template-areas: 
     "foto1 foto1 foto1 foto2 foto2"
     "foto1 foto1 foto1 foto2 foto2"
-    "foto3 foto3 foto4 foto4 foto4"
-    "foto3 foto3 foto4 foto4 foto4";
+    "foto3 foto4 foto4 foto4 foto4"
+    "foto3 foto4 foto4 foto4 foto4";
     gap: 1rem;
     padding: 1rem;
 }
@@ -277,19 +284,37 @@ nav div ul li a {
     width:100%;
 }
 .img1{
-    background-color: #007BFF;
+    background-image: url(../assets/Imagen-3personas.jpg);
+    background-size:cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-position-y: center;
     grid-area: foto1;
+
 }
 .img2 {
-    background-color: #a0d4e0;
+    background-image: url(../assets/imagen-mujer.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
     grid-area: foto2;
 }
 .img3{
-    background-color: #333;
+    background-image: url(../assets/imagen-hombre.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
     grid-area: foto3;
 }
 .img4{
-    background-color: #922d2d;
+    background-image: url(../assets/Imagen-2hombres.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0px -150px;
+    background-position-x: center;
+    background-position-y: center;
     grid-area: foto4;
 }
 footer {
@@ -314,6 +339,8 @@ footer {
     border: #333;
     border-style: solid;
     background-color: #185036;
+    font-size: 3.125rem;
+    justify-content: center;
 }
 .block2 {
     grid-area:block2 ;
@@ -331,12 +358,6 @@ footer {
     background-color: #9cd3b9;
     border: #333;
 }
-
-
-
-
-
-
 
 @media (max-width: 1024px){
     header {
@@ -405,14 +426,37 @@ footer {
 
 }
 
-@media (max-width: 375px){
-    .videos div{
-        padding:0;
-    }
-}
-
 @media (max-width: 425px){
-    
+    .hero {
+        height: 120vh;
+    }
+    .videos div{
+        padding:0px;
+        justify-content: center;
+        align-items: center;
+        border:0;
+        margin:20px 0;
+        justify-items: center;
+    }
+    .video1 ul{
+        list-style: none;
+    }
+    .video2 ul{
+        list-style: none;
+    }
+    .video3 ul{
+        list-style: none;
+    }
+    .modelos h2 {
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    .modelos div {
+        padding:0px;
+    }
+    .capacitacion h1 {
+        font-size: 2.5rem;
+    }
 }
 
 
